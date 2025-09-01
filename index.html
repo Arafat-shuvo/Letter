@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RAG Letter Writer</title>
+</head>
+<body>
+  <h1>Letter Writer (RAG + GPT)</h1>
+
+  <label for="letterType">Choose Letter Type:</label>
+  <select id="letterType">
+    <option value="application">Application Letter</option>
+    <option value="love">Love Letter</option>
+    <option value="recommendation">Recommendation Letter</option>
+  </select>
+
+  <br><br>
+  <label for="userInput">Who is this for / any special instructions?</label><br>
+  <textarea id="userInput" rows="4" cols="50" placeholder="E.g., Applying for a software engineer role at Google..."></textarea>
+
+  <br><br>
+  <button onclick="generateLetter()">Generate Letter</button>
+
+  <h2>Generated Letter:</h2>
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
